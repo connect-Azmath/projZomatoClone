@@ -1,0 +1,304 @@
+.hero {
+  width: 100%;
+  background-color: antiquewhite;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.subtitle {
+  font-size: 30px;
+}
+
+.search {
+  font-size: 20px;
+}
+.collections {
+  color: black;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+  /* align-items: center; */
+}
+
+.sub__heading_container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  /* background-color: aquamarine; */
+  color: blue;
+  /* height: 100px;
+    width: 130px; */
+  border: none;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sub__div {
+  color: brown;
+  object-fit: contain;
+  object-position: 30em;
+}
+
+/* Get the App */
+.get__the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254,  250, 241);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get__the_app .semi-container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.get__the_app .semi-container .left{
+    flex: 2;
+
+} 
+
+.get__the_app .semi-container .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get__the_app .semi-container .right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} 
+
+.right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.right p{
+    font-size: 0.7rem;
+}
+
+.radio__buttons_container{
+    display: flex;
+    align-items:center; 
+    gap: 1rem;
+
+}
+
+.radio__buttons_container div{
+    display: flex;
+    align-items:center;
+    justify-content: center; 
+    gap: 1rem;
+
+}
+
+.radio__buttons_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: red; 
+}
+
+.right .input_container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input_container button, .input_container input{
+    padding: 10px 12px;
+}
+
+.input_container input{
+    flex: auto;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input_container button{
+    border: none;
+    background-color: rgb(235, 78, 78);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right .download__app_container{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.download__app_container h5{
+    font-weight: 400;
+    color: gray; 
+}
+
+.download__app_container div{
+    display: flex; 
+    gap: 1rem;
+}
+.download__app_container div img{
+    width: 35%;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .get__the_app .semi-container .left
+    .get__the_app .semi-container .right{
+        flex: 1;
+    }
+    .get__the_app .semi-container{
+        width: 80%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 900px) {
+    .get__the_app {
+        padding: 2rem;
+    }
+    .get__the_app .semi-container{
+        width: 900%;
+        flex-direction: column;
+    }
+    get__the_app .semi-container .right h1{
+        font-size: medium;
+    }
+}
+
+/* Footer Section */
+/* Grid - can be used direction (rows & columns) at a time, 2D (Flex 1D) Made up of Fragments */
+.footer{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer_section1{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.footer_section1 img{
+    width: 130px;
+}
+
+.section1_buttonContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.section1_buttonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    border-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navigation_container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+}
+
+.link__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;    
+}
+
+.link__container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer__link:hover{
+    color: black;
+}
+
+.social__links_container button{
+    background-color: black; 
+    color: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.social__links_container button i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__section_logos{
+    width: 100%;
+}
+
+.disclaimer{
+    width: 80%;
+    margin: auto;
+    color: gray;
+}
+
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .navigation_container{
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .navigation_container{
+        grid-template-columns: repeat(1, 1fr)
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
